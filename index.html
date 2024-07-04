@@ -41,46 +41,46 @@
                 <a href="https://people.csail.mit.edu/danielzoran/">Daniel Zoran</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://yangyi02.github.io">Yi Yang</a><sup>2</sup>
+                <a href="https://yangyi02.github.io">Yi Yang</a><sup>2</sup>,
               </span>              
               <span class="author-block">
                 <a href="https://yuliarubanova.github.io/">Yulia Rubanova</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=NVD-BU4AAAAJ">Rishabh Kabra</a><sup>2</sup>
+                <a href="https://scholar.google.com/citations?user=NVD-BU4AAAAJ">Rishabh Kabra</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="http://www.carldoersch.com">Carl Doersch</a><sup>2</sup>
+                <a href="http://www.carldoersch.com">Carl Doersch</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=cnbENAEAAAAJ">Dilara Gokay</a><sup>2</sup>
+                <a href="https://scholar.google.com/citations?user=cnbENAEAAAAJ">Dilara Gokay</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=kbqjyGQAAAAJ">Joseph Heyward</a><sup>2</sup>
+                <a href="https://scholar.google.com/citations?user=kbqjyGQAAAAJ">Joseph Heyward</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="http://e-pot.xyz/">Etienne Pot</a><sup>2</sup>
+                <a href="http://e-pot.xyz/">Etienne Pot</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://qwlouse.github.io/">Klaus Greff</a><sup>2</sup>
+                <a href="https://qwlouse.github.io/">Klaus Greff</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://cs.stanford.edu/~dorarad/">Drew A. Hudson</a><sup>2</sup>
+                <a href="https://cs.stanford.edu/~dorarad/">Drew A. Hudson</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.co.uk/citations?user=GRICvzoAAAAJ">Thomas Albert Keck</a><sup>2</sup>
+                <a href="https://scholar.google.co.uk/citations?user=GRICvzoAAAAJ">Thomas Albert Keck</a><sup>2</sup>,
               </span>
               <span class="author-block">
                 <a href="https://scholar.google.com/citations?user=IUZ-7_cAAAAJ">Joao Carreira</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://scholar.google.de/citations?user=FXNJRDoAAAAJ">Alexey Dosovitskiy</a><sup>3</sup>
+                <a href="https://scholar.google.de/citations?user=FXNJRDoAAAAJ">Alexey Dosovitskiy</a><sup>3</sup>,
               </span>
               <span class="author-block">
                 <a href="https://msajjadi.com/">Mehdi S. M. Sajjadi</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://tkipf.github.io/">Thomas Kipf</a><sup>2</sup>,
+                <a href="https://tkipf.github.io/">Thomas Kipf</a><sup>2</sup>
               </span>
             </div>
 
@@ -174,70 +174,81 @@
         <div class="column is-four-fifths">
           <div class="content">
 
-            <h2 class="title is-3">Decoder Arg-Max Attention Maps</h2>
+            <h2 class="title is-3">Visualizing Token Attention Maps</h2>
             <div class="container">
               <p>
                 For each pixel location, at each frame, we colour code the token that has the most attention weight at that location. If the representation is stable - i.e. if the same token tracks the same content as it moves - we should see the motion of the token argmax move with the scene motion, which is the case.
               </p>
               <div id="results-carousel" class="carousel results-carousel">
+                <!-- First item in the combined carousel -->
                 <div class="item">
-                  <img src="supplementary/example.gif" alt="Description of Image" style="width: 100%; height: 100%;">
+                  <div class="image-container">
+                    <img src="supplementary/example.gif" alt="Decoder Arg-Max Attention Map" style="width: 100%; height: auto;">
+                  </div>
+                  <div class="token-row">
+                    <img src="supplementary/example_token_1.gif" alt="Individual Token Attention Map 1" style="width: 25%; height: auto;">
+                    <img src="supplementary/example_token_2.gif" alt="Individual Token Attention Map 2" style="width: 25%; height: auto;">
+                    <img src="supplementary/example_token_3.gif" alt="Individual Token Attention Map 3" style="width: 25%; height: auto;">
+                    <img src="supplementary/example_token_4.gif" alt="Individual Token Attention Map 4" style="width: 25%; height: auto;">
+                  </div>
                 </div>
+            
+                <!-- Additional items -->
                 <div class="item">
-                  <img src="supplementary/more_examples/example_1.gif" alt="Description of Image" style="width: 100%; height: 100%;">
+                  <div class="image-container">
+                    <img src="supplementary/more_examples/example_1.gif" alt="Decoder Arg-Max Attention Map" style="width: 100%; height: auto;">
+                  </div>
+                  <div class="token-row">
+                    <img src="supplementary/more_examples/example_1_1.gif" alt="Individual Token Attention Map 1" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_1_2.gif" alt="Individual Token Attention Map 2" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_1_3.gif" alt="Individual Token Attention Map 3" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_1_4.gif" alt="Individual Token Attention Map 4" style="width: 25%; height: auto;">
+                  </div>
                 </div>
+            
+                <!-- Repeat the structure for other items -->
                 <div class="item">
-                  <img src="supplementary/more_examples/example_2.gif" alt="Description of Image" style="width: 100%; height: 100%;">
+                  <div class="image-container">
+                    <img src="supplementary/more_examples/example_2.gif" alt="Decoder Arg-Max Attention Map" style="width: 100%; height: auto;">
+                  </div>
+                  <div class="token-row">
+                    <img src="supplementary/more_examples/example_2_1.gif" alt="Individual Token Attention Map 1" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_2_2.gif" alt="Individual Token Attention Map 2" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_2_3.gif" alt="Individual Token Attention Map 3" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_2_4.gif" alt="Individual Token Attention Map 4" style="width: 25%; height: auto;">
+                  </div>
                 </div>
+            
+                <!-- Repeat the structure for other items -->
                 <div class="item">
-                  <img src="supplementary/more_examples/example_3.gif" alt="Description of Image" style="width: 100%; height: 100%;">
+                  <div class="image-container">
+                    <img src="supplementary/more_examples/example_3.gif" alt="Decoder Arg-Max Attention Map" style="width: 100%; height: auto;">
+                  </div>
+                  <div class="token-row">
+                    <img src="supplementary/more_examples/example_3_1.gif" alt="Individual Token Attention Map 1" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_3_2.gif" alt="Individual Token Attention Map 2" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_3_3.gif" alt="Individual Token Attention Map 3" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_3_4.gif" alt="Individual Token Attention Map 4" style="width: 25%; height: auto;">
+                  </div>
                 </div>
-                <div class="item">
-                  <img src="supplementary/more_examples/example_4.gif" alt="Description of Image" style="width: 100%; height: 100%;">
-                </div>
-              </div>
-              <p>
-                From left to right: colour coded arg-max tokens, blended arg-max with video, ground truth video, frame predictions
-              </p>
-            </div>
 
-            <h2 class="title is-3">Individual Tokens Attention Maps </h2>
-            <div class="container">
-              <p>
-                Note how tokens latch to specific scene elements and track them as they move
-              </p>
-              <div id="results-carousel" class="carousel results-carousel">
+                <!-- Repeat the structure for other items -->
                 <div class="item">
-                  <img src="supplementary/example_token_1.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/example_token_2.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/example_token_3.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/example_token_4.gif" alt="Description of Image" style="width: 25%; height: 25%;">
+                  <div class="image-container">
+                    <img src="supplementary/more_examples/example_4.gif" alt="Decoder Arg-Max Attention Map" style="width: 100%; height: auto;">
+                  </div>
+                  <div class="token-row">
+                    <img src="supplementary/more_examples/example_4_1.gif" alt="Individual Token Attention Map 1" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_4_2.gif" alt="Individual Token Attention Map 2" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_4_3.gif" alt="Individual Token Attention Map 3" style="width: 25%; height: auto;">
+                    <img src="supplementary/more_examples/example_4_4.gif" alt="Individual Token Attention Map 4" style="width: 25%; height: auto;">
+                  </div>
                 </div>
-                <div class="item">
-                  <img src="supplementary/more_examples/example_1_1.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_1_2.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_1_3.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_1_4.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                </div>
-                <div class="item">
-                  <img src="supplementary/more_examples/example_2_1.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_2_2.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_2_3.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_2_4.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                </div>
-                <div class="item">
-                  <img src="supplementary/more_examples/example_3_1.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_3_2.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_3_3.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_3_4.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                </div>
-                <div class="item">
-                  <img src="supplementary/more_examples/example_4_1.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_4_2.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_4_3.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                  <img src="supplementary/more_examples/example_4_4.gif" alt="Description of Image" style="width: 25%; height: 25%;">
-                </div>                
+                
               </div>
+              <p>
+                Top Row from left to right: colour coded arg-max tokens, blended arg-max with video, ground truth video, frame predictions. Bottom row: 4 randomly selected tokens latch to specific scene elements and track them as they move
+              </p>
             </div>
 
             <h2 class="title is-3">PCA Analysis of Tokens</h2>
@@ -289,8 +300,12 @@
           <h2 class="title is-3">Related Links</h2>
           <div class="content has-text-justified">
             <p>
-              <a href="https://slot-attention-video.github.io/savi++/">SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos</a> encodes a video into a set of temporally-consistent latent variables (object slots).
-            </p>            
+              <a href="https://slot-attention-video.github.io/">SAVi: Conditional Object-Centric Learning from Video</a> encodes a video into a set of temporally-consistent latent variables (object slots), and is trained to predict optical flow or to reconstruct input frames.
+            </p>
+            <p>
+              <a href="https://slot-attention-video.github.io/savi++/">SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos</a> improves SAVi by utilizing depth prediction and by adopting best practices for model scaling
+              in terms of architecture design and data augmentation.
+            </p>
             <p>
               <a href="https://srt-paper.github.io/">Scene Representation Transformer: Geometry-Free Novel View Synthesis Through Set-Latent Scene Representations</a> takes few posed or unposed images of novel real-world scenes as input and produces a set-latent scene representation that is decoded to 3D videos & semantics.
             </p>            
