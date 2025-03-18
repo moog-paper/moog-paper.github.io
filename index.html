@@ -32,7 +32,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Moving Off-the-Grid: Scene-Grounded Video Representations</h1>
+            <h2 class="title is-2 publication-title">Moving Off-the-Grid: Scene-Grounded Video Representations</h2>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://www.sjoerdvansteenkiste.com/">Sjoerd van Steenkiste</a><sup>1*</sup>,
@@ -151,7 +151,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
+          <h3 class="title is-3">Abstract</h3>
           <div class="content has-text-justified">
             <p>
               Current vision models typically maintain a fixed correspondence between their representation structure and image space. Each layer comprises a set of tokens arranged “on-the-grid,” which biases patches or tokens to encode information at a specific spatio(-temporal) location. In this work we present Moving Off-the-Grid (MooG), a self-supervised video representation model that offers an alternative approach, allowing tokens to move “off-the-grid” to better enable them to represent scene elements consistently, even as they move across the image plane through time. By using a combination of cross-attention and positional embeddings we disentangle the representation structure and image structure. We find that a simple self-supervised objective—next frame prediction—trained on video data, results in a set of latent tokens which bind to specific scene structures and track them as they move. We demonstrate the usefulness of MooG’s learned representation both qualitatively and quantitatively by training readouts on top of the learned representation on a variety of downstream tasks. We show that MooG can provide a strong foundation for different vision tasks when compared to “on-the-grid” baselines.
@@ -162,7 +162,7 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Video Summary</h2>
+          <h3 class="title is-3">Video Summary</h3>
           <a href="https://recorder-v3.slideslive.com/?share=95107&s=f5e93695-de87-4b92-99a5-96eec81bf67e">
             <img src="static/images/neurips.png" alt="Video Summary">
           </a>
@@ -176,7 +176,7 @@
         <div class="column is-four-fifths">
           <div class="content">
 
-            <h2 class="title is-3">Visualizing Token Attention Maps</h2>
+            <h3 class="title is-3">Visualizing Token Attention Maps</h3>
             <div class="container">
               <p>
                 For each pixel location, at each frame, we colour code the token that has the most attention weight at that location. If the representation is stable - i.e. if the same token tracks the same content as it moves - we should see the motion of the token argmax move with the scene motion, which is the case.
@@ -253,7 +253,7 @@
               </p>
             </div>
 
-            <h2 class="title is-3">PCA Analysis of Tokens</h2>
+            <h3 class="title is-3">PCA Analysis of Tokens</h3>
             <div class="container">
               <p>
                 We unroll the model over a batch of 24 short clips, each 12 frames in length. We take the predicted states of all clips across all time steps to obtain a 294912 x 512 matrix where 512 is the token size. We calculate the PCA components of this matrix and take 3 (out of 512) of the leading components and visualize them as RGB. Note the consistent cross sequence structure, relating to meaningful elements in the scene. From left to right, PCA in RGB, blended with original video, original video.
@@ -277,7 +277,7 @@
               </div>
             </div>
 
-            <h2 class="title is-3">Changing the Number of Tokens</h2>
+            <h3 class="title is-3">Changing the Number of Tokens</h3>
             <div class="container">
               <p>
                 Since the model has a latent set of tokens there are no parameters in the model that depends on the number of tokens. As a result we can instantiate the model with a varying number of tokens without retraining. As can be seen the model adapts elegantly, making the tokens bind to larger areas of the image but still being able to predict future frames adequatly and track scene structure. This model has been trained with 1024 tokens. Shown, from top to bottom, are 256, 512 and 1024 tokens, from right to left predictions, ground truth frames, blended argmax attention, argmax attention.
@@ -299,7 +299,7 @@
 
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <h2 class="title is-3">Related Links</h2>
+          <h3 class="title is-3">Related Links</h3>
           <div class="content has-text-justified">
             <p>
               <a href="https://slot-attention-video.github.io/">SAVi: Conditional Object-Centric Learning from Video</a> encodes a video into a set of temporally-consistent latent variables (object slots), and is trained to predict optical flow or to reconstruct input frames.
